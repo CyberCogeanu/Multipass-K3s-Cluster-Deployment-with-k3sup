@@ -1,0 +1,12 @@
+# cloud config
+users:
+- default
+- name: ubuntu
+  sudo: ALL=(ALL) NOPASSWD:ALL
+  ssh_authorized_keys:
+    - ssh-rsa ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC55xS6fKrY8165Yc+7ZF+cWZFIyo+wIQs0U737VuAaPOuJMdiryGOiT3pLTW3q/SZhStJhIaeK8Rk/DyXtsM3B3Kk6DaIhog02khayGDmGlBJqnRMUZTSFxSSvftwKJmMKs65hah7VHxhRV1sicNn6maP6jPZ78+t5/mfx7IU1SIE1S0lvOOGdbMV8fbpQBtIEWmVZq0Csfq4+Y/AxC1cNbZY7dpIyIrw2XHKvehZc+zWVYCaYKbb8NVhffSS+qFJgMHoUqAzIkT4GznJ3/ZkdAmAuMR+zRIJozpsUTEuju06SPlxURdQWmUMY8l/UNSGy8gFFGENHtr9xF4kdGPoom76JaKIIZE5jzUQNuGwkkkv5PMRiN3bSaWbF+ok6SuwF4toa3c4ld+0js9YIkWvRl8Col0svlOLm3h8uHoJpYYr5MDAGOKZyxkz6iLtrY9x5m5zRhiZVPqtEXJTBbJb98mXhdt91tbDM1oxMui03vUEI2NikeksA09CvZ4I4fW/Tvcp0NfmOtRogT027d4I0z2dpt7gJbAY+nYC3eIGiyjxljEHmkhQaVSVfFCLyCpdR1XdSkRb4m8lR4opHqX+2UajEv/A/d5KWDlO8NS8Ok5gLofUMtsvx60+Yzz3zBUyCWsJWlAkSThmMvGUtvrgOMMYDFYmT7SZI73opgSEnbQ== elk@elk 
+
+runcmd:
+    - sudo apt update
+    - sudo apt upgrade -y
+    - sudo apt install curl

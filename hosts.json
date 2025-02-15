@@ -1,0 +1,22 @@
+[
+  {
+    "hostname": "k3sup-master1",
+    "ip": "10.174.237.31"
+  },
+  {
+    "hostname": "k3sup-master2",
+    "ip": "10.174.237.2"
+  },
+  {
+    "hostname": "k3sup-master3",
+    "ip": "10.174.237.115"
+  },
+  {
+    "hostname": "k3sup-slave1",
+    "ip": "10.174.237.22"
+  },
+  {
+    "hostname": "k3sup-slave2",
+    "ip": "10.174.237.83"
+  }
+]
